@@ -10,6 +10,10 @@
 		104E798C201ED792001E9494 /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104E7982201ED791001E9494 /* Reusable.framework */; };
 		104E7991201ED792001E9494 /* ReusableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E7990201ED792001E9494 /* ReusableTests.swift */; };
 		104E7993201ED792001E9494 /* Reusable.h in Headers */ = {isa = PBXBuildFile; fileRef = 104E7985201ED791001E9494 /* Reusable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		104E799D201ED7FB001E9494 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E799C201ED7FB001E9494 /* Reusable.swift */; };
+		104E799F201ED880001E9494 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E799E201ED880001E9494 /* ContainerViewController.swift */; };
+		104E79A1201ED8A9001E9494 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E79A0201ED8A9001E9494 /* CollectionReusableView.swift */; };
+		104E79A3201ED8B6001E9494 /* TableReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E79A2201ED8B6001E9494 /* TableReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		104E798B201ED792001E9494 /* ReusableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReusableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		104E7990201ED792001E9494 /* ReusableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTests.swift; sourceTree = "<group>"; };
 		104E7992201ED792001E9494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		104E799C201ED7FB001E9494 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		104E799E201ED880001E9494 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		104E79A0201ED8A9001E9494 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		104E79A2201ED8B6001E9494 /* TableReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,10 @@
 			children = (
 				104E7985201ED791001E9494 /* Reusable.h */,
 				104E7986201ED791001E9494 /* Info.plist */,
+				104E799C201ED7FB001E9494 /* Reusable.swift */,
+				104E799E201ED880001E9494 /* ContainerViewController.swift */,
+				104E79A0201ED8A9001E9494 /* CollectionReusableView.swift */,
+				104E79A2201ED8B6001E9494 /* TableReusableView.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -148,6 +160,7 @@
 				TargetAttributes = {
 					104E7981201ED791001E9494 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					104E798A201ED792001E9494 = {
@@ -196,6 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104E79A3201ED8B6001E9494 /* TableReusableView.swift in Sources */,
+				104E79A1201ED8A9001E9494 /* CollectionReusableView.swift in Sources */,
+				104E799F201ED880001E9494 /* ContainerViewController.swift in Sources */,
+				104E799D201ED7FB001E9494 /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +351,7 @@
 		104E7997201ED792001E9494 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.rosskimes.Reusable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +374,7 @@
 		104E7998201ED792001E9494 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +396,7 @@
 		104E799A201ED792001E9494 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R593MMYS9H;
 				INFOPLIST_FILE = ReusableTests/Info.plist;
@@ -390,6 +411,7 @@
 		104E799B201ED792001E9494 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R593MMYS9H;
 				INFOPLIST_FILE = ReusableTests/Info.plist;
