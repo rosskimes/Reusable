@@ -6,17 +6,11 @@
 //  Copyright © 2018 rosskimes.net. All rights reserved.
 //
 
-
-public enum TableReuseSource {
-	case asNib, asClass
-}
-
 public enum TableReusableType {
 	case asCell, asHeaderFooterView
 }
 
-public protocol TableReusableCell: class {
-	static var reuseSource: TableReuseSource { get }
+public protocol TableReusableCell: ReusableView {
 	static var reuseType: TableReusableType { get }
 }
 
@@ -48,6 +42,9 @@ extension TableReusableCell {
 			
 		case (.asClass, .asHeaderFooterView):
 			tableView.register(self, forHeaderFooterViewReuseIdentifier: reuseId)
+			
+		case (.asStoryboard, _):
+			break
 		}
 	}
 }

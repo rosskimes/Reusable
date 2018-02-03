@@ -14,6 +14,7 @@
 		104E799F201ED880001E9494 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E799E201ED880001E9494 /* ContainerViewController.swift */; };
 		104E79A1201ED8A9001E9494 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E79A0201ED8A9001E9494 /* CollectionReusableView.swift */; };
 		104E79A3201ED8B6001E9494 /* TableReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E79A2201ED8B6001E9494 /* TableReusableView.swift */; };
+		10FD731E20266093008949FB /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD731D20266093008949FB /* ReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		104E799E201ED880001E9494 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		104E79A0201ED8A9001E9494 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
 		104E79A2201ED8B6001E9494 /* TableReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableReusableView.swift; sourceTree = "<group>"; };
+		10FD731D20266093008949FB /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				104E799E201ED880001E9494 /* ContainerViewController.swift */,
 				104E79A0201ED8A9001E9494 /* CollectionReusableView.swift */,
 				104E79A2201ED8B6001E9494 /* TableReusableView.swift */,
+				10FD731D20266093008949FB /* ReusableView.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			files = (
 				104E79A3201ED8B6001E9494 /* TableReusableView.swift in Sources */,
 				104E79A1201ED8A9001E9494 /* CollectionReusableView.swift in Sources */,
+				10FD731E20266093008949FB /* ReusableView.swift in Sources */,
 				104E799F201ED880001E9494 /* ContainerViewController.swift in Sources */,
 				104E799D201ED7FB001E9494 /* Reusable.swift in Sources */,
 			);

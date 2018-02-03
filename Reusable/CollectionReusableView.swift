@@ -6,16 +6,11 @@
 //  Copyright © 2018 rosskimes.net. All rights reserved.
 //
 
-public enum CollectionReuseSource {
-	case asNib, asClass
-}
-
 public enum CollectionReusableType {
 	case asCell, asView(ofKind: String)
 }
 
-public protocol CollectionReusableCell: class {
-	static var reuseSource: CollectionReuseSource { get }
+public protocol CollectionReusableCell: ReusableView {
 	static var reuseType: CollectionReusableType { get }
 }
 
@@ -60,10 +55,12 @@ extension CollectionReusableCell {
 			
 		case (.asClass, .asView(let kind)):
 			collectionView.register(self, forSupplementaryViewOfKind: kind, withReuseIdentifier: reuseId)
+			
+		case (.asStoryboard, _):
+			break
 		}
 	}
 }
-
 
 public extension CollectionReusableCell where Self: UICollectionViewCell {
 	static var reuseType: CollectionReusableType { return .asCell }
